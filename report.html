@@ -3486,8 +3486,8 @@ F-score on testing data: 0.6742
 </tbody>
 </table>
 <p>As expected, reducing the number of features has a negative impact upon our model.  The optimized model has dropped in accuracy by around 1.1%, and the F-Score has dropped by around 0.025.</p>
-<p>However, it still performs better than the unoptimzed model, which is impressive.  In particular, the F-score still sees significant improvements.</p>
-<p>Since with an SVM, the training time is a large consideration, I would likely reduce the data set. However, the cumilative weight of the 5 most important features only give around 60% coverage.  I would consider picking the 6-8 most important features to achieve 75% coverage.  This would be a good middle ground between the time gains and keeping the complexity of the SVM model.</p>
+<p>However, it still performs better than the unoptimized model, which is impressive.  In particular, the F-score still sees significant improvements.</p>
+<p>Since with an SVM, the training time is a large consideration, I would likely reduce the data set.  The loss in performance does become worthwhile given the increased training time. However, the cumilative weight of the 5 most important features only give around 60% coverage.  I would consider picking the 6-8 most important features to achieve 75% coverage.  This would be a good middle ground between the time gains and keeping the complexity of the SVM model, but I would still go for a Reduced Features approach.</p>
 
 </div>
 </div>
